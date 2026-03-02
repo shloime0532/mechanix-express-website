@@ -6,11 +6,12 @@
   --accent: #E63946;
   --accent-light: #FF4D5A;
   --accent-dark: #C5303C;
-  --blue: #3B82F6;
-  --blue-light: #60A5FA;
-  --light: #F8FAFC;
+  --blue: #0EA5E9;
+  --blue-light: #38BDF8;
+  --blue-dark: #0284C7;
+  --light: #F0F4F8;
   --text: #1A1A2E;
-  --text-light: #4A4A6A;
+  --text-light: #4A5568;
   --background: #ffffff;
 }
 
@@ -22,11 +23,13 @@
   --color-accent-dark: var(--accent-dark);
   --color-blue: var(--blue);
   --color-blue-light: var(--blue-light);
+  --color-blue-dark: var(--blue-dark);
   --color-light: var(--light);
   --color-text: var(--text);
   --color-text-light: var(--text-light);
   --color-background: var(--background);
   --font-sans: var(--font-inter);
+  --font-heading: var(--font-inter);
 }
 
 body {
@@ -67,6 +70,58 @@ html {
 .stagger-children.visible > *:nth-child(6) { transition-delay: 500ms; opacity: 1; transform: translateY(0); }
 .stagger-children.visible > *:nth-child(7) { transition-delay: 600ms; opacity: 1; transform: translateY(0); }
 .stagger-children.visible > *:nth-child(8) { transition-delay: 700ms; opacity: 1; transform: translateY(0); }
+
+/* Number card signature styles */
+.number-card {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s ease;
+}
+
+.number-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(14, 165, 233, 0.15);
+}
+
+.number-card:hover .card-number {
+  opacity: 0.12;
+}
+
+.number-card:hover .card-border {
+  opacity: 1;
+}
+
+.card-number {
+  position: absolute;
+  top: -10px;
+  right: 8px;
+  font-size: 96px;
+  font-weight: 900;
+  line-height: 1;
+  color: var(--blue);
+  opacity: 0.06;
+  transition: all 0.4s ease;
+  pointer-events: none;
+  user-select: none;
+}
+
+@media (min-width: 640px) {
+  .card-number {
+    font-size: 120px;
+    right: 12px;
+  }
+}
+
+.card-border {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--blue), var(--accent));
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
 
 .star-filled {
   color: #FBBF24;
