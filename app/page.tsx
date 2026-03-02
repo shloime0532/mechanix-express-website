@@ -4,8 +4,8 @@ import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 
 /* ─── CONSTANTS ─── */
-const PHONE = "(855) 946-2923";
-const PHONE_HREF = "tel:+18559462923";
+const PHONE = "(732) 730-7712";
+const PHONE_HREF = "tel:+17327307712";
 const ADDRESS = "100 Madison Avenue, Lakewood, NJ 08701";
 const HOURS = "Mon\u2013Fri 8AM\u20136PM";
 const MAP_LINK =

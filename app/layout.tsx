@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://mechanix-express-website.vercel.app"),
   title: "Mechanix Express | Expert Auto Repair in Lakewood, NJ",
   description:
-    "Lakewood's trusted auto repair shop. Engine diagnostics, brake service, transmission repair, oil changes & more. 5-star rated with 12+ verified reviews. Same-day service available. Call (855) 946-2923.",
+    "Lakewood's trusted auto repair shop. Engine diagnostics, brake service, transmission repair, oil changes & more. 5-star rated with 12+ verified reviews. Same-day service available. Call (732) 730-7712.",
   openGraph: {
     title: "Mechanix Express | Expert Auto Repair in Lakewood, NJ",
     description:
