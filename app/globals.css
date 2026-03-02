@@ -81,7 +81,7 @@ html {
 }
 
 .number-card:hover .card-number {
-  opacity: 0.12;
+  opacity: 0.18;
 }
 
 .number-card:hover .card-border {
@@ -96,7 +96,7 @@ html {
   font-weight: 900;
   line-height: 1;
   color: var(--blue);
-  opacity: 0.06;
+  opacity: 0.10;
   transition: all 0.4s ease;
   pointer-events: none;
   user-select: none;
